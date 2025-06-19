@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Webathon Masterpiece</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+</head>
+<body>
+
+<!-- Loader -->
+<div class="loader-container" id="loaderContainer">
+  <div class="progress-bar">
+    <div class="progress-fill" id="progressFill"></div>
+  </div>
+  <p id="loadingText">Loading your awesome experience... 0%</p>
+</div>
+
+<!-- Particles Background -->
+<div id="particles-js"></div>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">🚀 Webathon</div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#footer">Contact</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+</nav>
+
+<!-- Hero Section -->
+<header id="home" class="hero">
+  <h1>Welcome to the Future</h1>
+  <p>This isn't just a template – it's an experience.</p>
+  <a href="#features" class="btn">Explore the Cool</a>
+</header>
+
+<!-- Features Section -->
+<section id="features" class="features">
+  <h2>🔥 Our Awesome Features</h2>
+  <div class="feature-box">
+    <div class="feature">⚡ Lightning Fast</div>
+    <div class="feature">💡 Brilliant Ideas</div>
+    <div class="feature">🌈 Stunning Design</div>
+  </div>
+</section>
+
+<!-- Cards Section -->
+<section class="cards-section">
+  <h2>✨ Explore Our Modules</h2>
+  <div class="tabs">
+    <div class="tab active" data-tab="1">AI Chat</div>
+    <div class="tab" data-tab="2">Live Stats</div>
+    <div class="tab" data-tab="3">Fun Facts</div>
+  </div>
+  <div class="tab-content" id="tabContent">
+    <h3>AI Chat</h3>
+    <p>Talk to an intelligent chatbot that helps you navigate.</p>
+  </div>
+</section>
+
+<!-- Carousel Section -->
+<section class="carousel-section">
+  <h2>🚀 Our Features in Action</h2>
+  <div class="carousel">
+    <div class="carousel-text" id="carouselText">Click on a dot to view features.</div>
+    <div class="carousel-dots">
+      <span onclick="changeText(0)"></span>
+      <span onclick="changeText(1)"></span>
+      <span onclick="changeText(2)"></span>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer id="footer" class="footer">
+  <p>&copy; 2025 Webathon Project | Crafted with ❤️ by Harshit</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
